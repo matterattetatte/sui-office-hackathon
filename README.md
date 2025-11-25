@@ -65,3 +65,10 @@ npm install
 
 # Run dev server
 npm run dev  
+
+
+## Competition
+
+Read more about this:
+
+https://officex.app/
