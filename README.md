@@ -1,58 +1,67 @@
-# .
+# Sui Office
 
-This template should help get you started developing with Vue 3 in Vite.
+[![Vue](https://img.shields.io/badge/vue-3.0+-%2341B883?logo=vue&logoColor=white)](https://vuejs.org/)  
+[![TypeScript](https://img.shields.io/badge/typescript-4.0+-%23007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
+[![Walrus](https://img.shields.io/badge/walrus-decentralized‑storage-blue)](https://walrus.xyz)  
+[![Sui](https://img.shields.io/badge/sui-blockchain-4DA2FF?logo=sui&logoColor=white)](https://sui.io)  
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 What Is Sui Office
 
-## Recommended Browser Setup
+Sui Office is a **decentralized alternative** to Google Docs and Microsoft Office — a Web3-native document editor built **on Sui + Walrus**. It gives you full ownership of your documents, letting you create, edit, and fetch them via blob storage on Walrus, with no centralized back-end.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Type Support for `.vue` Imports in TS
+## ✅ Current Features
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- **Wallet-based auth**: Connect your Sui wallet — no username / password needed.  
+- **Create & Save Documents**: Write rich text docs using the Emo Editor.  
+- **Persist on Walrus**: Documents are stored as blobs on Walrus.  
+- **Fetch via Aggregator**: Retrieve document content through the Walrus aggregator.  
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🔭 Tech Stack
 
-## Project Setup
+- **Frontend**: Vue.js + TypeScript  
+- **Editor**: Emo Editor  
+- **Blockchain / Storage**: Sui + Walrus  
+- **Sui Integration**: SuiDouble for wallet interactions  
 
-```sh
-npm install
-```
+---
 
-### Compile and Hot-Reload for Development
+## 🌱 Future Vision
 
-```sh
-npm run dev
-```
+- Permission system: read / write access per wallet  
+- End‑to‑end encryption: secure your documents  
+- Real-time collaboration: CRDT or WebRTC-based live editing  
+- Friendly filenames + metadata (not just blob IDs)  
+- Version history and document rollback  
+- Support for images, tables, and rich file types  
 
-### Type-Check, Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 🧠 How It Works
 
-### Lint with [ESLint](https://eslint.org/)
+1. You connect your Sui wallet to the app.  
+2. You write a document in Emo Editor.  
+3. When you save, it publishes the content as a **blob** to Walrus.  
+4. You get a blob ID that references your document.  
+5. To read your document later, you fetch it via the Walrus aggregator.  
+6. (Future) Documents might be encrypted & shared / collaborated on.
 
-```sh
-npm run lint
-```
+---
 
+## 🏃 Getting Started
 
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/sui-office.git  
+cd sui-office  
 
+# Install
+npm install  
 
-Notes:
-
-
-### Transaction sponsoring
-
-createHeroAPI!!!
+# Run dev server
+npm run dev  
